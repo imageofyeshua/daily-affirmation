@@ -1,0 +1,16 @@
+<h1>Edit Affirmation</h1>
+
+<%= form_with model: @affirmation do |form| %>
+  <div>
+    <%= form.label :url %><br>
+    <%= form.text_field :url %>
+  </div>
+  <div>
+    <%= form.label :translation %><br>
+    <%= form.text_field :translation %>
+  </div>
+  
+  <button class="border border-2 border-blue-400 px-2 hover:bg-slate-200 w-[160px] mt-4">
+    <%= form.submit %>
+  </button>
+<% end %>

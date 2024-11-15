@@ -1,0 +1,11 @@
+<div>
+  <% @verses.each do |verse| %>
+    <div>
+      <p class="text-lg"><%= verse['text'] %></p>
+      <span class="bg-slate-100">
+        <%= "#{verse['book_name']} #{verse['chapter']} : #{verse['verse']}" %>
+      </span>
+    </div> 
+  <% end %>
+</div>
+<div class="border border-2 border-slate-500 mt-3 w-[65px] text-center px-2 hover:bg-slate-100"><%= link_to "Admin", affirmations_path %></div>
